@@ -253,6 +253,7 @@ const DivFontLetterUser = styled.div`
     border-radius: 50%;
     filter: brightness(250%);
     margin-top: -25px;
+    margin-left: -1px;
     text-align: center;
 `
 
@@ -278,6 +279,9 @@ function Actuality() {
     const [filePost, setFilePost] = useState({ file: null })
     const [isDataLoading, setDataLoading] = useState(false)
     const { togglePostModal } = useContext(PostContext)
+
+    
+console.log(dataResult.infos)
 
     useEffect(() => {
         setDataLoading(true)
@@ -349,7 +353,6 @@ function Actuality() {
         }, 2000)
     }, [dataResultPosts])
 
-    console.log(dataResultPosts.length)
     const clickInput = () => {
         document.querySelector('#picturePost').click()
     }

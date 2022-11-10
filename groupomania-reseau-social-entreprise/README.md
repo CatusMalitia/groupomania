@@ -9,3 +9,5 @@ Les variables d'environnement vous ont été envoyées sur un fichier .txt sépa
 Si les images ne devaient pas apparaître dans les tests quant aux publications, créez un dossier images à la racine du backend.
 
 Si jamais il devait y avoir un problème, n'hésitez pas à m'envoyer un mail.
+
+Le code manque cruellement de commentaires. Mes excuses pour cela. Manque de temps pour.

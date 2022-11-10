@@ -147,12 +147,13 @@ const DivFontPictureProfile = styled.div.attrs({
 `
 
 const DivFontLetterUser = styled.div`
-    width: 100%;
-    height: 100%;
+    width: 101%;
+    height: 101%;
     background-color: ${colors.primary};
     border-radius: 50%;
     filter: brightness(250%);
     margin-top: -30px;
+    margin-left: -1px;
 `
 
 const NameUser = styled.div`
@@ -399,7 +400,7 @@ function AsideProfil() {
     if (firstnameUser !== undefined) {
         letterFirstnameUser = firstnameUser.charAt(0).toUpperCase()
     }
-
+console.log(dataResult)
     return (
         <>
             <AsideProfilContenair>

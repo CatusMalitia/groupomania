@@ -149,6 +149,7 @@ const ButtonValidation = styled.input.attrs({
     &:hover {
         transition-delay: 200ms;
         opacity: 0.47;
+        transform: scale(1.02)
     }
     @media screen and (max-width: 768px) {
         margin-top: 50px;

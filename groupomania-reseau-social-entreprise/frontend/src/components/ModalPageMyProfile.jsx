@@ -205,14 +205,17 @@ const BlockContenairPicture = styled.div`
     color: ${colors.tertiary};
     border-color: ${colors.tertiary};
     margin-top: 20px;
-    @media screen and (max-width: 768px) {
-        height: 200px;
+    @media screen and (max-width: 961px) {
+        height: 300px;
     }
 `
 
 const BlockInputPicture = styled.label`
     width: 100%;
     height: 400px;
+    @media screen and (max-width: 961px) {
+        height: 300px;
+    }
 `
 const ImageLandscape = styled.img.attrs({
     id: 'previewLandscape',
@@ -224,7 +227,6 @@ const ImageLandscape = styled.img.attrs({
 `
 const ImageProfile = styled.img.attrs({
     id: 'previewProfile',
-    title: 'Ajouter une photo de profil'
 })`
     width: 100%;
     height: 100%;
@@ -243,6 +245,9 @@ const InputPictureLandscape = styled.input.attrs({
     position: absolute;
     color: ${colors.tertiary};
     border-color: ${colors.tertiary};
+    /* @media screen and (max-width: 961px) {
+        top: 10%;
+    } */
 `
 const InputPictureProfile = styled.input.attrs({
     type: 'file',
@@ -255,6 +260,10 @@ const InputPictureProfile = styled.input.attrs({
     position: absolute;
     right: 10%;
     transform: rotate(180deg);
+    @media screen and (max-width: 961px) {
+        bottom: -26%;
+        right: -54%
+    }
 `
 
 const DivHiddenInput = styled.div`
@@ -264,6 +273,9 @@ const DivHiddenInput = styled.div`
     position: absolute;
     top: 102%;
     left: -14%;
+    @media screen and (max-width: 961px) {
+        left: -70%;
+    }
 `
 
 const DivAsidePictureLeft = styled.div`
@@ -301,7 +313,6 @@ const PictureUserMyProfile = styled.div`
     @media screen and (max-width: 768px) {
         width: 100px;
         height: 100px;
-        top: -40px;
     }
 `
 
@@ -328,7 +339,7 @@ const ButtonValidation = styled.input.attrs({
         filter: brightness(90%);
     }
     @media screen and (max-width: 961px) {
-        margin-top: 10px;
+        margin-top: 60px;
         margin-bottom: 10px;
     }
 `
@@ -732,7 +743,7 @@ function ModalPageMyProfile() {
                             {dataResult.imageUrlProfilePicture ? (
                                 <ImageProfile
                                     src={dataResult.imageUrlProfilePicture}
-                                    alt="photo de fond utilisateur"
+                                    alt="photo de profil utilisateur"
                                 ></ImageProfile>
                             ) : (
                                 <ImageProfile src=" "></ImageProfile>
